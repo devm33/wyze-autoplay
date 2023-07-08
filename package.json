@@ -1,0 +1,11 @@
+{
+  "name": "wyze-autoplay",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chrome-webstore-upload-cli": "^2.2.2"
+  },
+  "scripts": {
+    "publish": "webstore upload --auto-publish"
+  }
+}
