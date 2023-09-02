@@ -12,6 +12,11 @@ function playAll(root) {
   });
 }
 
+/** Redirect from error page to view page. */
+if (window.location.pathname === "/api/auth/error") {
+  window.location.pathname = "/";
+}
+
 /** Watch the page for new elements and play them. */
 if (window.location.hostname === "view.wyze.com") {
   new MutationObserver((mutations) => {
@@ -23,9 +28,4 @@ if (window.location.hostname === "view.wyze.com") {
       });
     });
   }).observe(document.body, { childList: true, subtree: true });
-}
-
-/** Redirect from error page to view page. */
-if (window.location.pathname === "/api/auth/error") {
-  window.location.pathname = "/";
 }
