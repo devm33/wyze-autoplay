@@ -13,7 +13,7 @@
     {
       "js": ["scripts/content.js"],
       "matches": [
-        "https://view.wyze.com/*"
+        "https://*.wyze.com/*"
       ]
     }
   ]
