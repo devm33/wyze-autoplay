@@ -19,3 +19,8 @@ new MutationObserver(mutations => {
     });
   });
 }).observe(document.body, { childList: true, subtree: true });
+
+/** Redirect from error page to view page. */
+if (window.location.pathname === '/api/auth/error') {
+  window.location.pathname = '/';
+}
